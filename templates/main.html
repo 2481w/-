@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중고거래경매</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>중고거래경매</h1>
+        <nav>
+            <a href="/login">로그인</a>
+            <a href="/signup">회원가입</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="product-grid">
+            <!-- 상품 예제 -->
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="상품 이미지">
+                <h3>상품 제목</h3>
+                <p>상품 가격: 10,000원</p>
+                <p>남은 시간: 2일</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="상품 이미지">
+                <h3>상품 제목</h3>
+                <p>상품 가격: 20,000원</p>
+                <p>남은 시간: 3일</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="상품 이미지">
+                <h3>상품 제목</h3>
+                <p>상품 가격: 15,000원</p>
+                <p>남은 시간: 5시간</p>
+            </div>
+            <!-- 추가 상품 -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        로그인 없이 상품을 눌렀을 경우 상세페이지로 이동하지만 입찰하기 버튼 비활성화
+    </footer>
+</body>
+</html>

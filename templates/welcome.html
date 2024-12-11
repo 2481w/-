@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>환영합니다</title>
+</head>
+<body>
+    <h1>환영합니다, {{ username }}님!</h1>
+    <p>로그인에 성공했습니다.</p>
+    <p><a href="{{ url_for('add_product') }}">상품 등록</a></p>
+    <p><a href="{{ url_for('product_list') }}">상품 목록 보기</a></p>
+    <p><a href="{{ url_for('logout') }}">로그아웃</a></p>
+</body>
+</html>
